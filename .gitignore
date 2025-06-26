@@ -1,0 +1,15 @@
+# Go stuff
+bin/
+*.exe
+*.test
+*.out
+
+# Dependency directories (vendor/)
+vendor/
+
+# IDE/editor settings
+.vscode/
+.idea/
+
+# OS-specific files
+.DS_Store
