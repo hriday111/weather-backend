@@ -7,11 +7,11 @@ import (
 	"os"
 	"time"
 
+	_ "github.com/mattn/go-sqlite3"
+
 	"github.com/hriday111/weather-backend/internal/config"
 	"github.com/hriday111/weather-backend/internal/model"
 )
-
-const dbFile = "cache.db"
 
 var db *sql.DB
 
