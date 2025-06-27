@@ -20,8 +20,11 @@ This project leverages:
 ## setup format
 
 ```bash git clone https://github.com/hriday111/weather-backend.git``` 
-```docker build -t weather-backend . ```
-```docker run -p 8080:8080 -v $(pwd)/data:/app/data weather-backend ```
+
+```bash docker build -t weather-backend . ```
+
+```bash docker run -p 8080:8080 -v $(pwd)/data:/app/data weather-backend ```
+
 ## Usage format
 go run main.go 
 and then 
