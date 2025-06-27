@@ -16,7 +16,15 @@ This project leverages:
 - Polish/ English support
 - Auto background cache refresh
 
-## Usage format
 
+## setup format
+
+`git clone https://github.com/hriday111/weather-backend.git`
+`docker build -t weather-backend .`
+`docker run -p 8080:8080 -v $(pwd)/data:/app/data weather-backend`
+
+## Usage format
+go run main.go 
+and then 
 http://localhost:8080/<summary/forecast>?lat=<valid latitude>&lon=<valid longitude>&lang=<pl, en> (default is en)
 
