@@ -21,6 +21,8 @@ This project leverages:
 
 ```git clone https://github.com/hriday111/weather-backend.git``` 
 
+``` cd weather-backend```
+
 ```docker build -t weather-backend . ```
 
 ```docker run -p 8080:8080 -v $(pwd)/data:/app/data weather-backend ```
