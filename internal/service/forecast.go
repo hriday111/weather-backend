@@ -62,7 +62,7 @@ func fetchAndBuildForecast(lat, lon, lang string) (*model.ForecastResponse, erro
 		}
 
 		dayOfWeek := parsedDate.Weekday().String()
-
+		fmt.Println(dayOfWeek, lang)
 		energy := config.InstallationPowerKW * (apiData.Daily.SunshineDuration[i] / 60) * config.PanelEfficiency
 		forecast.Days = append(forecast.Days, model.ForecastDay{
 			Date:        apiData.Daily.Time[i],
