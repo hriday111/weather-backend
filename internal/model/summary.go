@@ -1,5 +1,6 @@
 package model
 
+// Represents weekly weather summary data.
 type WeeklySummary struct {
 	AveragePressure float64 `json:"average_pressure"`
 	AverageSunHours float64 `json:"average_sun_hours"`

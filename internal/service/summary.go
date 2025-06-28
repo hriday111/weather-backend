@@ -9,6 +9,7 @@ import (
 	//"time"
 )
 
+// Generates weekly weather summary based on forecast data.
 func GetSummary(lat, lon, lang string) (*model.WeeklySummary, error) {
 	forecast, err := GetForecast(lat, lon, lang)
 	if err != nil {

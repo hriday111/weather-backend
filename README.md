@@ -9,6 +9,8 @@ This project leverages:
 - high scalablity of the project using a modular structre.
 - centralized constant variables stored in internal/config/config.go
 
+
+
 ## Features
 - Feathes 7- day weather forecast at lat-lon
 - Calculates estimated solar enegry production per day
@@ -17,7 +19,26 @@ This project leverages:
 - Auto background cache refresh
 
 
-## setup format
+## TODO
+
+- Set up GitHub projects for this project and keep track of issues and todos
+- Add a feature so that an api call can be made to this backend by just city name instead of co-ordinates
+- Spell check this city name using Levenshtein distance. 
+
+## Directory structre explainations
+The main code of the backend is stored in main.go
+in internal/ are self created helper libraries that make it easier to update, scale and troubleshoot different elements. 
+
+internal/api is for routing http requests to functions, enabling CORS and then handling requests
+
+internal/config stores configuration constant variables
+
+internal/model is used to define the model of json recieved from open meteo api and model of json request to push/publish for the frontend
+
+internal/service handles and process the conversion of json recieved and to be published
+
+internal/util is for other utilities such as a small translation dictionary
+## Docker build /setup format
 
 ```git clone https://github.com/hriday111/weather-backend.git``` 
 
@@ -25,10 +46,10 @@ This project leverages:
 
 ```docker build -t weather-backend . ```
 
-```docker run -p 8080:8080 -v $(pwd)/data:/app/data weather-backend ```
+```docker run -d -p 8080:8080 -v $(pwd)/data:/app/data weather-backend ```
 
-## Usage format
+## Non docker Usage format
 go run main.go 
-and then 
-http://localhost:8080/<summary/forecast>?lat=<valid latitude>&lon=<valid longitude>&lang=<pl, en> (default is en)
 
+## Api Call structure
+http://localhost:8080/<summary/forecast>?lat=<valid latitude>&lon=<valid longitude>&lang=<pl, en> (default is en)

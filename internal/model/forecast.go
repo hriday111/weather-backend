@@ -1,5 +1,6 @@
 package model
 
+// Represents API response for weather data.
 type APIResponse struct {
 	Daily struct {
 		Time             []string  `json:"time"`
@@ -13,6 +14,8 @@ type APIResponse struct {
 		PressureMSL []float64 `json:"pressure_msl"`
 	} `json:"hourly"`
 }
+
+// Represents daily forecast data.
 type ForecastDay struct {
 	Date        string  `json:"date"`
 	Day         string  `json:"day"`
@@ -22,6 +25,7 @@ type ForecastDay struct {
 	EnergyKWh   float64 `json:"energy_kwh"`
 }
 
+// Represents processed forecast response.
 type ForecastResponse struct {
 	Days             []ForecastDay `json:"days"`
 	PressureReadings []float64     `json:"pressure_readings,omitempty"`

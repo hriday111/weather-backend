@@ -1,5 +1,6 @@
 package util
 
+// Provides translations for weather-related terms and days of the week.
 var translations = map[string]map[string]string{
 	"en": {
 		"with_precipitation":    "with precipitation",
@@ -25,6 +26,7 @@ var translations = map[string]map[string]string{
 	},
 }
 
+// Translates keys to the specified language.
 func Translate(key, lang string) string {
 	if langMap, ok := translations[lang]; ok {
 		if val, ok := langMap[key]; ok {
