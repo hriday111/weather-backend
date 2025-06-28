@@ -10,7 +10,7 @@ import (
 )
 
 func GetSummary(lat, lon, lang string) (*model.WeeklySummary, error) {
-	forecast, err := GetForecast(lat, lon)
+	forecast, err := GetForecast(lat, lon, lang)
 	if err != nil {
 		return nil, err
 	}

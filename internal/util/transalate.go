@@ -4,10 +4,24 @@ var translations = map[string]map[string]string{
 	"en": {
 		"with_precipitation":    "with precipitation",
 		"without_precipitation": "without precipitation",
+		"monday":                "Monday",
+		"tuesday":               "Tuesday",
+		"wednesday":             "Wednesday",
+		"thursday":              "Thursday",
+		"friday":                "Friday",
+		"saturday":              "Saturday",
+		"sunday":                "Sunday",
 	},
 	"pl": {
 		"with_precipitation":    "z opadami",
 		"without_precipitation": "bez opadów",
+		"monday":                "Poniedziałek",
+		"tuesday":               "Wtorek",
+		"wednesday":             "Środa",
+		"thursday":              "Czwartek",
+		"friday":                "Piątek",
+		"saturday":              "Sobota",
+		"sunday":                "Niedziela",
 	},
 }
 

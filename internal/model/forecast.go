@@ -15,6 +15,7 @@ type APIResponse struct {
 }
 type ForecastDay struct {
 	Date        string  `json:"date"`
+	Day         string  `json:"day"`
 	WeatherCode int     `json:"weather_code"`
 	TempMax     float64 `json:"temp_max"`
 	TempMin     float64 `json:"temp_min"`
