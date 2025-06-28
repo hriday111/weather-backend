@@ -10,7 +10,9 @@ This project leverages:
 - centralized constant variables stored in internal/config/config.go
 
 
-
+## Backend public access api:
+here is an example, replace forecast with summary if you need summary. You can change params for lat and lon and lang (only en/pl) as needed
+https://wback.07042006.xyz/forecast?lat=52&lon=20&lang=pl
 ## Features
 - Feathes 7- day weather forecast at lat-lon
 - Calculates estimated solar enegry production per day
